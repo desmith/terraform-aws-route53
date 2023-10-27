@@ -1,9 +1,9 @@
 variable "zone_name" {
   type = string
-  description = "The route53 zone name."
+  description = "The route53 zone name"
 }
 
-variable "records" {
+variable "zone_records" {
   type = list(object({
     name = string
     type = string
