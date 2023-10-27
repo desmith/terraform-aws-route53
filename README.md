@@ -25,8 +25,9 @@ No modules.
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
+| <a name="input_zone_apex_name"></a> [zone\_apex\_name](#input\_zone\_apex\_name) | The name of the zone apex to create the DNS record in | `string` | `""` | no |
 | <a name="input_zone_name"></a> [zone\_name](#input\_zone\_name) | The route53 zone name | `string` | n/a | yes |
-| <a name="input_zone_records"></a> [zone\_records](#input\_zone\_records) | n/a | <pre>list(object({<br>    name = string<br>    type = string<br>    ttl = number<br>    records = list(string)<br>  }))</pre> | n/a | yes |
+| <a name="input_zone_records"></a> [zone\_records](#input\_zone\_records) | List of DNS records to create in the zone | <pre>list(object({<br>    name    = string<br>    type    = string<br>    ttl     = number<br>    records = list(string)<br>  }))</pre> | `null` | no |
 
 ## Outputs
 
